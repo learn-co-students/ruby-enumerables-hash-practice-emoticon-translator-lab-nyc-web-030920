@@ -17,8 +17,6 @@ def load_library(file_path)
    new_emoticons
 end
 
-# puts load_library("./lib/emoticons.yml")
-
 def get_japanese_emoticon (emoticons, western_emo)
   emoticons = load_library("./lib/emoticons.yml")
   get_emoticon = emoticons["get_emoticon"]
@@ -37,8 +35,20 @@ def get_japanese_emoticon (emoticons, western_emo)
   japanese_emo
 end
 
-puts get_japanese_emoticon("./lib/emoticons.yml", "=D")
+def get_english_meaning(emoticons, japanese_emo)
+  emoticons = load_library("./lib/emoticons.yml")
+  get_emoticon = emoticons["get_meaning"]
+  meaning = ""
 
-def get_english_meaning
-  # code goes here
+  get_emoticon.each { |key, value|
+      if japanese_emo == key
+        meaning = value
+      end
+  }
+
+  if meaning == ""
+    meaning = "Sorry, that emoticon was not found"
+  end 
+  
+  meaning 
 end
