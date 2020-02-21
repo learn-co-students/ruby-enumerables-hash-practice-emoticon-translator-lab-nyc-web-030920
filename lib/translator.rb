@@ -27,8 +27,12 @@ def get_japanese_emoticon (emoticons, western_emo)
   get_emoticon.each { |key, value|
       if western_emo == key
         japanese_emo = value
-      end 
+      end
   }
+
+  if japanese_emo == ""
+    japanese_emo = "Sorry, that emoticon was not found"
+  end 
   
   japanese_emo
 end
