@@ -21,6 +21,58 @@ describe "#load_library" do
     it "the keys 'get_meaning' and 'get_emoticon' point to inner hashes" do
       result.keys.each { |key| expect(result[key].class).to eq(Hash) }
     end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     it "the keys inside the 'get_meaning' hash are the Japanese emoticons" do
       emoticons = ["☜(⌒▽⌒)☞", "(ΘεΘ;)", "(￣ー￣)", "o_O", "(^_-)"]
@@ -32,6 +84,33 @@ describe "#load_library" do
         end
       end
     end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     it "the emoticon keys inside the 'get_meaning' hash point to their meanings" do
       emoticons = {
@@ -48,7 +127,39 @@ describe "#load_library" do
         end
       end
     end
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     it "the keys inside the 'get_emoticon' hash are the English emoticons" do
       emoticons = ["O:)", ":'(", ";)", ":$"]
       emoticons.each do |english_emoticon|
@@ -59,6 +170,26 @@ describe "#load_library" do
         end
       end
     end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 
     it "the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents" do
       emoticons = {"O:)" => "☜(⌒▽⌒)☞", ":'(" => "(Ｔ▽Ｔ)", ";)" => "(^_-)"}
